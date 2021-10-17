@@ -1,0 +1,7 @@
+optimizer:
+  class_name: rmsprop
+  config:
+    learning_rate: 1e-5
+    rho: 0.9
+    momentum: 0.9
+    epsilon: 1.0

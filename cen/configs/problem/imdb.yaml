@@ -1,0 +1,28 @@
+dataset:
+  name: imdb
+  context_kwargs:
+    maxlen: 512
+    vocab_size: 40000
+  feature_kwargs:
+    feature_type: topics
+    nb_topics: 50
+    bow_vocab_size: 2000
+    topic_vocab_size: 20000
+    extended: false
+    remove_const_features: true
+    signal_to_noise: null
+    standardize: true
+  max_train_size: null
+  permute: true
+  seed: 42
+
+train:
+  loss:
+    name: categorical_crossentropy
+  batch_size: 64
+  epochs: 10
+
+eval:
+  metrics:
+    acc:
+      name: categorical_accuracy

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cen
+Version: 0.0.1.dev0
+Summary: Contextual Explanation Networks.
+Home-page: https://github.com/alshedivat/cen
+Author: Maruan Al-Shedivat
+Author-email: maruan@alshedivat.com
+License: MIT
+Description: # Inception
+        Merge repos
+        
+Platform: UNKNOWN
+Provides-Extra: tf
+Provides-Extra: tf_gpu
+Provides-Extra: transformers

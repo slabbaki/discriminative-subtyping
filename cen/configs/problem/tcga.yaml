@@ -1,0 +1,18 @@
+dataset:
+  name: tcga
+  context_kwargs:
+    train_dir: '/content/TFRecords/train'
+    valid_dir: '/content/TFRecords/valid'
+    test_dir: '/content/TFRecords/test'
+    batch_size: 32
+    epochs: 100
+
+train:
+  loss:
+    name: categorical_crossentropy  
+  verbose: 1
+
+eval:
+  metrics:
+    acc:
+      name: categorical_accuracy

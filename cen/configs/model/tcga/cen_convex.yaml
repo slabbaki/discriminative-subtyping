@@ -1,0 +1,31 @@
+model:
+  name: cen
+  kwargs:
+    explainer_name: convex
+    explainer_kwargs:
+      dict_size: 1
+      use_bias: true
+      kernel_regularizer:
+        class_name: l1_l2
+        config:
+          l1: 0.
+          l2: 0.
+      bias_regularizer:
+        class_name: l1_l2
+        config:
+          l1: 0.
+          l2: 0.
+      dict_kernel_regularizer:
+        class_name: l1_l2
+        config:
+          l1: 0.
+          l2: 0.
+      dict_bias_regularizer:
+        class_name: l1_l2
+        config:
+          l1: 0.
+          l2: 0.
+    top_dense_layers: 1
+    top_dense_units: 128
+    top_dense_activation: relu
+    top_dense_dropout: 0.0

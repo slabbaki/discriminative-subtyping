@@ -1,0 +1,24 @@
+dataset:
+  name: mnist
+  context_kwargs:
+    standardize: false
+  feature_kwargs:
+    feature_type: hog3x3
+    remove_const_features: true
+    signal_to_noise: null
+    standardize: true
+    whiten: false
+  max_train_size: null
+  permute: true
+  seed: 42
+
+train:
+  loss:
+    name: categorical_crossentropy
+  batch_size: 64
+  epochs: 10
+
+eval:
+  metrics:
+    acc:
+      name: categorical_accuracy

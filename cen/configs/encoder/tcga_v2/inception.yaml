@@ -1,0 +1,6 @@
+network:
+  name: Inception_v3
+  include_top: False
+  pooling: 'avg'
+  classes: 3
+  isTraining: True

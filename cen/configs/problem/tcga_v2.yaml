@@ -1,0 +1,22 @@
+dataset:
+  name: tcga_v2
+  context_kwargs:
+    train_dir: /content/TFRecords/train
+    valid_dir: /content/TFRecords/validation
+    test_dir: /content/TFRecords/test
+    genes_filepath: /content/cosmic_highvar_gene_names.txt
+    log_expr_path: /content/g2
+    min_log_expr_std: 1e-2
+    num_classes: 3
+    batch_size: 64
+
+train:
+  loss:
+    name: categorical_crossentropy  
+  verbose: 2
+  epochs: 5
+
+eval:
+  metrics:
+    acc:
+      name: categorical_accuracy

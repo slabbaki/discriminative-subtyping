@@ -1,0 +1,13 @@
+hydra-core
+numpy>=1.15.0
+scipy>=1.0.0
+scikit-learn
+
+[tf]
+tensorflow==2.0.0
+
+[tf_gpu]
+tensorflow-gpu==2.0.0
+
+[transformers]
+transformers

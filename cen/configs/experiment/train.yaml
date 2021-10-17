@@ -1,0 +1,10 @@
+train:
+  loss: ???
+  batch_size: ???
+  epochs: ???
+  checkpoint_kwargs:
+    monitor: "val_loss"
+    save_best_only: true
+    verbose: true
+  tensorboard: true
+  verbose: 1
